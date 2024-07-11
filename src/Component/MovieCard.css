@@ -1,0 +1,89 @@
+/* src/components/MovieCard.css */
+.movie-container{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background: rgb(0, 0, 0);
+
+}
+.movie-card {
+  font-family: sans-serif;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 16px;
+  margin: 10px;
+  width: 100%;
+  max-width: 400px;
+  box-shadow: 0 20px 20px rgb(71, 8, 8);
+  background-color: #141414;
+  color: #fff;
+}
+
+.movie-image {
+  flex: 1;
+}
+
+.movie-image img {
+  margin-left: 50px;
+  width:300px;
+  border-radius: 5px;
+  box-shadow: 5px 20px 20px rgb(83, 16, 16);
+}
+
+.movie-content {
+  padding-top: 20px;
+  padding-left: 40px;
+  flex: 2;
+  justify-content: center;
+  align-items: center;
+  margin-left: 16px;
+}
+
+.movie-card h2 {
+  font-size: 24px;
+  margin: 8px 0;
+  color: rgb(15, 245, 245);
+}
+
+.movie-card p {
+  display: flex;
+  font-size: 16px;
+  margin: 4px 0;
+  color: rgb(53, 160, 160);
+}
+
+@media (max-width: 768px) {
+  .movie-card {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .movie-content {
+    margin-left: 0;
+    text-align: center;
+  }
+
+  .movie-card h2 {
+    font-size: 20px;
+  }
+
+  .movie-card p {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .movie-card {
+    padding: 8px;
+  }
+
+  .movie-card h2 {
+    font-size: 18px;
+  }
+
+  .movie-card p {
+    font-size: 12px;
+  }
+}
